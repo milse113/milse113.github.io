@@ -10,7 +10,9 @@ html, body {
 
     font-size: 16px;
     color: #ADADAD;
+
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -20,22 +22,23 @@ ul {
 }
 
 a {
-    color: #6666EE
+    color: #6666EE;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+a:hover {
+    color: #8888EE;
 }
 
 #content {
-    /*margin-left: 15px;
-    margin-top : 15px;*/
     text-align: left;
     padding: 40px;
     background-color: #161616;
-    /*border: 1px solid #222222;*/
-    border-radius: 4px;
     border: 1px solid transparent;
-    /*border-image: linear-gradient(var(--angle), #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);*/
     border-image: linear-gradient(var(--angle), #b827fc 0%, #2c90fc 25%, #421ca1 50%, #0d2b90 75%, #d522ed 100%);
     border-image-slice: 1;
-    animation: 15s rotate linear infinite;
+    animation: 22s rotate linear infinite;
 }
 
 @-moz-document url-prefix() {
@@ -64,6 +67,7 @@ a {
 #subtitle {
     width: 64ch;
     white-space: nowrap;
+    font-style: italic;
 }
 
 #hobbies-header {
@@ -80,6 +84,66 @@ a {
 
 #work-list {
     margin-top: 8px;
+}
+
+#find-me-header {
+    margin-top: 16px;
+}
+
+#find-me-list {
+    margin-top: 8px;
+}
+
+#heart {
+    height: 20px;
+    margin-left: .7ch;
+    margin-right: .7ch;
+}
+
+#footer {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+#outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#webring {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#webring-next-link {
+    margin-left: .7ch;
+    text-decoration: none;
+}
+
+#webring-last-link {
+    margin-right: .7ch;
+}
+
+#webring-next {
+    width: 15%;
+    text-align: right;
+}
+
+#webring-last {
+    width: 15%;
+}
+
+#webring-text {
+    font-style: italic;
 }
 
 .subheader {
