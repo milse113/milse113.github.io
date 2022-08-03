@@ -38,6 +38,12 @@ a {
     animation: 15s rotate linear infinite;
 }
 
+@-moz-document url-prefix() {
+    #content {
+        --angle: 45deg;
+    }
+}
+
 @keyframes rotate {
   to {
     --angle: 360deg;
