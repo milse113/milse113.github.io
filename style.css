@@ -1,0 +1,83 @@
+html, body {
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #111111;
+    font-family: 'JetBrains Mono', monospace;
+
+    font-size: 16px;
+    color: #ADADAD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+}
+
+a {
+    color: #6666EE
+}
+
+#content {
+    --angle: 45deg;
+    /*margin-left: 15px;
+    margin-top : 15px;*/
+    text-align: left;
+    padding: 40px;
+    background-color: #161616;
+    /*border: 1px solid #222222;*/
+    border-radius: 4px;
+    border: 1px solid transparent;
+    /*border-image: linear-gradient(var(--angle), #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);*/
+    border-image: linear-gradient(var(--angle), #b827fc 0%, #2c90fc 25%, #421ca1 50%, #0d2b90 75%, #d522ed 100%);
+    border-image-slice: 1;
+    animation: 15s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 45deg;
+  inherits: false;
+}
+
+#name {
+    font-size: 32px;
+    color: #DFDFDF
+}
+
+#subtitle {
+    width: 64ch;
+    white-space: nowrap;
+}
+
+#hobbies-header {
+    margin-top: 16px;
+}
+
+#hobbies-list {
+    margin-top: 8px;
+}
+
+#work-header {
+    margin-top: 16px;
+}
+
+#work-list {
+    margin-top: 8px;
+}
+
+.subheader {
+    font-size: 20px;
+    color: #DFDFDF
+}
