@@ -17,6 +17,10 @@ html, body {
     align-items: center;
 }
 
+#lavender body {
+    background-color: #150915;
+}
+
 ul {
     margin: 0;
 }
@@ -31,6 +35,14 @@ a:hover {
     color: #8888EE;
 }
 
+#lavender a {
+    color: #9866ee !important;
+}
+
+#lavender a:hover {
+    color: #be66ee !important;
+}
+
 #content {
     text-align: left;
     padding: 41px;
@@ -38,6 +50,11 @@ a:hover {
     position: relative;
     overflow: hidden;
 }
+
+#lavender #content::after {
+    background-color: #250f25 !important;
+}
+
 #content::before {
     content: "";
     position: absolute;
@@ -147,12 +164,12 @@ a:hover {
 }
 
 #webring-next {
-    width: 15%;
+    width: 18%;
     text-align: right;
 }
 
 #webring-last {
-    width: 15%;
+    width: 18%;
 }
 
 #webring-text {
